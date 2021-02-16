@@ -5,8 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './customers-list.component.html',
   styleUrls: ['./customers-list.component.css']
 })
-export class CustomersComponent implements OnInit {
-
+export class CustomersListComponent implements OnInit {
+  filteredCustomers:any[] =[];
+  customersOrderTotal:number | undefined;
+  currencyCode:string='USD';
   constructor(
   ) { }
 
